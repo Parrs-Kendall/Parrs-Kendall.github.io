@@ -42,6 +42,7 @@ font-style: normal;
 	display: flex;
     justify-content: space-between; /* Distribute items evenly horizontally */
     align-items: center; /* Center items vertically */
+	padding: 10%;
 }
 .menu ul {
     list-style: none;
