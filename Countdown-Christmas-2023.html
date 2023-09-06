@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <style>
+        /* Add your CSS styles here */
+        @import url("https://use.typekit.net/jrq1ksv.css");
+        #countdown {
+            font-family: open-sans, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 1rem;
+        }
+        #until {
+            font-family: open-sans, sans-serif;
+            font-weight: 400;
+            font-style: italic;
+            letter-spacing: 0.1rem;
+            padding-top: 1rem;
+        }
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #container1 {
+            padding: 3rem;
+            text-align: center;
+        }
+		html, body {
+        overflow: hidden;
+    }
+    </style>
+</head>
+<body>
+    <!-- Countdown Display -->
+    <div id="container">
+        <div id="container1">
+            <div id="countdown"></div>
+			<div id="until">until Christmas!</div>
+
+        </div>
+    </div>
+
+    <script>
+        function calculateTimeRemaining() {
+            const targetDate = new Date('December 24, 2023 23:59:59').getTime();
+            const now = new Date().getTime();
+            const timeRemaining = targetDate - now;
+
+            if (timeRemaining <= 0) {
+                return { expired: true };
+            } else {
+                const seconds = Math.floor((timeRemaining / 1000) % 60);
+                const minutes = Math.floor((timeRemaining / (1000 * 60)) % 60);
+                const hours = Math.floor((timeRemaining / (1000 * 60 * 60)) % 24);
+                const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+
+                return {
+                    expired: false,
+                    days: days,
+                    hours: hours,
+                    minutes: minutes,
+                    seconds: seconds
+                };
+            }
+        }
+
+        function formatCountdownValue(value) {
+            return value.toString().padStart(2, '0');
+        }
+
+        function updateCountdown() {
+            const countdownElement = document.getElementById('countdown');
+            const time = calculateTimeRemaining();
+            const until = document.getElementById('until');
+
+            if (time.expired) {
+                countdownElement.innerHTML = 'Countdown expired!';
+            } else {
+                countdownElement.innerHTML = `${formatCountdownValue(time.days)}d ${formatCountdownValue(time.hours)}h ${formatCountdownValue(time.minutes)}m ${formatCountdownValue(time.seconds)}s`;
+            }
+            until.innerHTML = 'until Christmas!';
+        }
+
+        // Initial update
+        updateCountdown();
+
+        // Update every second
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>
