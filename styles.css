@@ -35,7 +35,7 @@ font-style: normal;
 			width: 100%;
 			border: none ;
 		}
-body{
+.main-section{
 	padding: 5%;
 }
 
@@ -60,14 +60,15 @@ body{
 
 .menu li {
     margin: 0 10px; /* Add spacing between menu items */
-			color: #EEEBE6 !important;
 width: auto;
 	text-align: center;
 }
 
 .menu a {
     text-decoration: none;
-    color: #fff; /* Text color for menu items */
+			color: #EEEBE6;
+	text-transform: capitalize;
+	letter-spacing: 0.2rem;
 }
 /* Responsive styling */
 @media screen and (max-width: 768px) {
