@@ -6,39 +6,71 @@
     <title>Your Web Page Title</title>
     <style>
         /* Your CSS styles can go here */
+		@import url("https://use.typekit.net/jrq1ksv.css");
+		h1, h2, h3, h4 {
+			font-family: freight-big-pro, serif;
+font-weight: 600;
+font-style: normal;
+			letter-spacing: 0.2rem;
+		}
+		p, a, li{
+			font-family: open-sans, sans-serif;
+font-weight: 300;
+font-style: normal;
+
+		}
+		body{
+			color: #272D2D;
+		}
+		footer{
+			font-size: 0.8rem;
+		}
+		table, tr, td {
+			border: none ;
+		}
+		table {
+            width: 100%; /* Table width occupies the entire viewport width */
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Your Website</h1>
+
+<header>
+  <h1>Welcome to Parrs Kendall</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
+              <li><a href="#">Home</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
             <h2>Countdowns</h2>
-			<ul>
-            <li><a href="/countdown-black_friday-2023.html">Black Friday</a></li>
-			<li><a href="/Countdown-Christmas-2023.html">Christmas</a></li>
-				</ul>
+			<table width="200" border="1">
+  <tbody>
+    <tr>
+      <td><iframe src="/countdown-black_friday-2023.html"></iframe></td>
+      <td><iframe src="/Countdown-Christmas-2023.html"></iframe></td>
+    </tr>
+    <tr>
+      <td><a href="/countdown-black_friday-2023.html">Black Friday</a></td>
+      <td><a href="/Countdown-Christmas-2023.html">Christmas</a></td>
+    </tr>
+  </tbody>
+</table>
         </section>
         
     </main>
     <footer>
-        <p>&copy; 2023 Your Website</p>
+      <p>&copy; 2023 Your Website</p>
     </footer>
-</body>
-</html>
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>index</title>
-</head>
-
-<body>
 </body>
 </html>
