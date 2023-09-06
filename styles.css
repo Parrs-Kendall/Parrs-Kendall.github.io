@@ -44,6 +44,9 @@ font-style: normal;
     justify-content: space-between; /* Distribute items evenly horizontally */
     align-items: center; /* Center items vertically */
 	padding: 1vh;
+	width: 100%;
+	border-collapse: collapse;
+
 }
 .menu ul {
     list-style: none;
@@ -55,7 +58,8 @@ font-style: normal;
 .menu li {
     margin: 0 10px; /* Add spacing between menu items */
 			color: #EEEBE6 !important;
-
+width: auto;
+	text-align: center;
 }
 
 .menu a {
