@@ -5,50 +5,17 @@ h1, h2, h3, h4 {
 font-weight: 500;
 font-style: normal;
 			letter-spacing: 0.1rem;
+		color: #272D2D !important;
+
 		}
 		p, a, li{
 			font-family: open-sans, sans-serif;
 font-weight: 100;
 font-style: normal;
+				color: #272D2D !important;
 
-		}
-		body{
-			color: #272D2D;
-		}
-		footer{
-			font-size: 0.8rem;
-		}
-		table, tr, td {
-			border: none ;
-		}
-		table {
-            width: 100%; /* Table width occupies the entire viewport width */
-            border-collapse: collapse;
-        }
 
-        td {
-            padding: 10px;
-            text-align: center;
-			width: 50%;
-        }
-		iframe{
-			width: 100%;
-			border: none ;
-		}h1, h2, h3, h4 {
-			font-family: freight-big-pro, serif;
-font-weight: 500;
-font-style: normal;
-			letter-spacing: 0.1rem;
-		}
-		p, a, li{
-			font-family: open-sans, sans-serif;
-font-weight: 100;
-font-style: normal;
-
-		}
-		body{
-			color: #272D2D;
-		}
+}
 		footer{
 			font-size: 0.8rem;
 		}
@@ -70,3 +37,7 @@ font-style: normal;
 			border: none ;
 		}
 
+a {
+    text-decoration: none; /* Remove the underline */
+
+}
