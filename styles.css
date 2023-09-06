@@ -37,7 +37,37 @@ font-style: normal;
 			border: none ;
 		}
 
-a {
-    text-decoration: none; /* Remove the underline */
+.menu {
+	background-color: #111e29 ;
+	display: flex;
+    justify-content: space-between; /* Distribute items evenly horizontally */
+    align-items: center; /* Center items vertically */
+}
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
 
+.menu li {
+    margin: 0 10px; /* Add spacing between menu items */
+			color: #EEEBE6 !important;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff; /* Text color for menu items */
+}
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align items to the start on small screens */
+    }
+
+    .menu li {
+        margin: 5px 0; /* Adjust spacing for small screens */
+    }
 }

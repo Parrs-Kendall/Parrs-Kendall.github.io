@@ -14,14 +14,7 @@
 </head>
 <body>
 
-<header>
-  <h1>Welcome to Parrs Kendall</h1>
-        <nav>
-            <ul>
-              <li><a href="#">Home</a></li>
-            </ul>
-        </nav>
-    </header>
+<header id="header"></header>
     <main>
         <section>
             <h2>Countdowns</h2>
@@ -40,8 +33,24 @@
         </section>
         
     </main>
-    <footer>
-      <p>&copy; 2023 Your Website</p>
-    </footer>
+    <footer id="footer"></footer>
+	
+	
+	
+	
+	<script>
+        // Use JavaScript to load and insert the header and footer
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
+            });
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer').innerHTML = html;
+            });
+    </script>
 </body>
 </html>
