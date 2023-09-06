@@ -1,18 +1,17 @@
 /* CSS Document */
+/*Global Styles*/
 
 h1, h2, h3, h4 {
 			font-family: freight-big-pro, serif;
 font-weight: 500;
 font-style: normal;
 			letter-spacing: 0.1rem;
-		color: #272D2D !important;
 
 		}
 		p, a, li{
 			font-family: open-sans, sans-serif;
 font-weight: 100;
 font-style: normal;
-				color: #272D2D !important;
 
 
 }
@@ -37,12 +36,14 @@ font-style: normal;
 			border: none ;
 		}
 
+/*Header Styles*/
+
 .menu {
 	background-color: #111e29 ;
 	display: flex;
     justify-content: space-between; /* Distribute items evenly horizontally */
     align-items: center; /* Center items vertically */
-	padding: 10%;
+	padding: 1vh;
 }
 .menu ul {
     list-style: none;
