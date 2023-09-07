@@ -27,7 +27,9 @@ font-style: normal;
 .main-section {
 	padding: 1%;
 }
-		
+.site_logo {
+	color: #DECBB7;
+}
 
 
 /*Header Styles*/
