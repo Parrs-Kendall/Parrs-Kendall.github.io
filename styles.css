@@ -1,6 +1,10 @@
 /* CSS Document */
 /*Global Styles*/
 
+.main-section {
+	padding: 0%;
+}
+
 h1, h2, h3, h4 {
 			font-family: freight-big-pro, serif;
 font-weight: 500;
@@ -18,26 +22,8 @@ font-style: normal;
 		footer{
 			font-size: 0.8rem;
 		}
-		table, tr, td {
-			border: none ;
-		}
-		table {
-            width: 100%; /* Table width occupies the entire viewport width */
-            border-collapse: collapse;
-        }
+		
 
-        td {
-            padding: 10px;
-            text-align: center;
-			width: 50%;
-        }
-		iframe{
-			width: 100%;
-			border: none ;
-		}
-.main-section{
-	padding: 5%;
-}
 
 /*Header Styles*/
 
@@ -46,10 +32,7 @@ font-style: normal;
 	display: flex;
     justify-content: space-between; /* Distribute items evenly horizontally */
     align-items: center; /* Center items vertically */
-	padding: 1vh;
-	width: 100%;
-	border-collapse: collapse;
-
+	padding: 1REM;
 }
 .menu ul {
     list-style: none;
@@ -59,8 +42,7 @@ font-style: normal;
 }
 
 .menu li {
-    margin: 0 10px; /* Add spacing between menu items */
-width: auto;
+    margin: 0 10%; /* Add spacing between menu items */
 	text-align: center;
 }
 
@@ -81,3 +63,23 @@ width: auto;
         margin: 5px 0; /* Adjust spacing for small screens */
     }
 }
+
+/* Index Styles */
+
+.main-section table, .main-section tr, .main-section td {
+			border: none ;
+		}
+		.main-section table {
+            width: 100%; /* Table width occupies the entire viewport width */
+            border-collapse: collapse;
+        }
+
+        .main-section td {
+            padding: 10px;
+            text-align: center;
+			width: 50%;
+        }
+		.main-section iframe{
+			width: 100%;
+			border: none ;
+		}
