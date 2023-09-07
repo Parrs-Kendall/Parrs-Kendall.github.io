@@ -2,14 +2,14 @@
 
 /*Colours
 VAN_DYKE: #433633;
-
+Magnolia: #F7F0F5
 
 */
 /*Global Styles*/
 
 /* Define a constant value */
 .main-section {
-	padding: 5%;
+	max-width: 1200px;
 }
 
 h1, h2, h3, h4 {
@@ -35,12 +35,12 @@ font-style: normal;
 /*Header Styles*/
 
 .menu {
-	background-color: #433633;
-	display: flex;
+    display: flex;
     justify-content: space-between; /* Distribute items evenly horizontally */
     align-items: center; /* Center items vertically */
-	padding: 1REM;
+    background-color: #433633; /* Background color for the menu */
 }
+
 .menu ul {
     list-style: none;
     padding: 0;
@@ -49,16 +49,15 @@ font-style: normal;
 }
 
 .menu li {
-    margin: 0 10%; /* Add spacing between menu items */
-	text-align: center;
+    margin: 0 10px; /* Add spacing between menu items */
 }
 
 .menu a {
     text-decoration: none;
-			color: #EEEBE6;
 	text-transform: capitalize;
-	letter-spacing: 0.2rem;
+    color: #F7F0F5; /* Text color for menu items */
 }
+
 /* Responsive styling */
 @media screen and (max-width: 768px) {
     .menu {
@@ -70,6 +69,8 @@ font-style: normal;
         margin: 5px 0; /* Adjust spacing for small screens */
     }
 }
+
+
 
 /* Index Styles */
 
