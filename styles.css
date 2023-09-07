@@ -7,9 +7,9 @@ Magnolia: #F7F0F5
 */
 /*Global Styles*/
 
-/* Define a constant value */
 .main-section {
 	max-width: 1200px;
+	margin: auto;
 }
 
 h1, h2, h3, h4 {
