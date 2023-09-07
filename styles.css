@@ -1,6 +1,12 @@
 /* CSS Document */
 /*Global Styles*/
 
+/* Define a constant value */
+:root {
+    VAN_DYKE: #433633;
+}
+
+
 .main-section {
 	padding: 5%;
 }
@@ -28,7 +34,7 @@ font-style: normal;
 /*Header Styles*/
 
 .menu {
-	background-color: #111e29 ;
+	background-color: var(VAN_DYKE);
 	display: flex;
     justify-content: space-between; /* Distribute items evenly horizontally */
     align-items: center; /* Center items vertically */
