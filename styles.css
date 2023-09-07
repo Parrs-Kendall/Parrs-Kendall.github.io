@@ -34,6 +34,7 @@ font-style: normal;
     justify-content: space-between; /* Distribute items evenly horizontally */
     align-items: center; /* Center items vertically */
     background-color: #433633; /* Background color for the menu */
+	padding: 1rem;
 }
 
 .menu ul {
@@ -65,6 +66,9 @@ font-style: normal;
     }
 }
 
+header{
+	margin: 0px;
+}
 
 
 /* Index Styles */
@@ -93,5 +97,6 @@ font-style: normal;
 
 .footer-section{
 	background-color: #433633; /* Background color for the menu */
+	color: #F7F0F5;
 
 }
