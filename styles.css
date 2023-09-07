@@ -7,11 +7,6 @@ Magnolia: #F7F0F5
 */
 /*Global Styles*/
 
-.main-section {
-	max-width: 1200px;
-	margin: auto;
-}
-
 h1, h2, h3, h4 {
 			font-family: freight-big-pro, serif;
 font-weight: 500;
