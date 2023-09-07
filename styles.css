@@ -6,6 +6,9 @@ Magnolia: #F7F0F5
 
 */
 /*Global Styles*/
+body {
+	margin: 0 !important;
+}
 
 h1, h2, h3, h4 {
 			font-family: freight-big-pro, serif;
